@@ -2,7 +2,21 @@
   <img src="https://www.tensorflow.org/images/tf_logo_social.png">
 </div>
 
-This repository contains TF1.15 which was modified and compiled on Jetson Xavier on Jetpack 4.3, Python 3.7, CUDA 10.0 support, cuDNN 7.6.5, TensorRT 6 and its wheels
+This repository contains TensorFlow <b>GPU</b> 1.15 (with TensorRT) and TensorFlow <b>GPU</b> 1.13 (No TensorRT because it wouldnt compile) which was modified and compiled on Jetson Xavier on Jetpack 4.3, Python 3.7, CUDA 10.0 support, cuDNN 7.6.5, TensorRT 6 and the compiled wheels. I cant figure out how to add the wheels on github (cant figure out how to use github) so here are the links from my pCloud:
+
+TensorFlow <b>GPU</b> 1.15.2 wheel with CUDA 10.0, cuDNN 7.6.5, TensorRT 6, XLA Support: https://my.pcloud.com/publink/show?code=XZYS5MkZkwHQE29fBdu1yoaJVFQIt72JQQrk
+
+
+TensorFlow <b>GPU</b> 1.13.2 wheel with CUDA 10.0, cuDNN 7.6.5, <b>NO TensorRT</b>, XLA Support (If you dont care about TensorRT for 1.13 but need GPU then this works out): https://my.pcloud.com/publink/show?code=XZIj5MkZnJ5WsLxe67FHGFDEnubjJhkmBdXV
+
+
+Finally, I am also adding the egg for scipy 1.4.1 because its a pain to install it from source for python 3.7 and might sav you some time: https://my.pcloud.com/publink/show?code=XZFu5MkZ8sdHM8mfU4F5HpU8s1f9P5IlvkTy
+
+Hope this helps and savs you the 24 hr and painful disk management compile it needs on the Xavier. Stay at home during the COVID-19 and hopefully this helps anyone out there who needs the wheels for Python 3.7 like I do  and this keeps you busy prototyping until NVIDIA announces the official wheels for Python 3.7
+
+<b>REMINDER: </b> This was tested on Ubuntu 18.04, Keras 2.3.1 which comes with Python 3.6 natively. You will have to install Python 3.7, configure your python alternatives, dont forget to edit your gnome-terminal and in the #! add python3.6 at the end else your terminal will break. You will also have to re-install a lot of packages for Python 3.7.
+
+I tested this wheel works fine on my Mask-RCNN application I am working on. Because it was a real challenge to build this, I lost track of what i ahd to modify. So below is the full src code that remained after bazel built tensorflow. Hopefully one of you git experts out there can find the changes I had to make to be able to compile TensorRT which was so buggy (grrrr) and make a btter job than what I did right here in terms of documentation.
 
 **`Documentation`** |
 ------------------- |
