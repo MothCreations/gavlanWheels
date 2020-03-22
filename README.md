@@ -2,6 +2,8 @@
   <img src="https://www.tensorflow.org/images/tf_logo_social.png">
 </div>
 
+This repository contains TF1.15 which was modified and compiled on Jetson Xavier on Jetpack 4.3, Python 3.7, CUDA 10.0 support, cuDNN 7.6.5, TensorRT 6 and its wheels
+
 **`Documentation`** |
 ------------------- |
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
