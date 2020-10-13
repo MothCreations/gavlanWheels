@@ -4,13 +4,7 @@
 
 This repository contains TensorFlow <b>GPU</b> 1.15 (with TensorRT) and TensorFlow <b>GPU</b> 1.13 (No TensorRT because it wouldnt compile) which was modified and compiled on Jetson Xavier on Jetpack 4.3, Python 3.7, CUDA 10.0 support, cuDNN 7.6.5, TensorRT 6 and the compiled wheels. I cant figure out how to add the wheels on github (cant figure out how to use github) so here are the links from my pCloud:
 
-TensorFlow <b>GPU</b> 1.15.2 wheel with CUDA 10.0, cuDNN 7.6.5, TensorRT 6, XLA Support: https://my.pcloud.com/publink/show?code=XZYS5MkZkwHQE29fBdu1yoaJVFQIt72JQQrk
-
-
-TensorFlow <b>GPU</b> 1.13.2 wheel with CUDA 10.0, cuDNN 7.6.5, <b>NO TensorRT</b>, XLA Support (If you dont care about TensorRT for 1.13 but need GPU then this works out): https://my.pcloud.com/publink/show?code=XZIj5MkZnJ5WsLxe67FHGFDEnubjJhkmBdXV
-
-
-Finally, I am also adding the egg for scipy 1.4.1 because its a pain to install it from source for python 3.7 and might save you some time: https://my.pcloud.com/publink/show?code=XZFu5MkZ8sdHM8mfU4F5HpU8s1f9P5IlvkTy
+TensorFlow <b>GPU</b> 1.13 and 1.15.2 wheel with CUDA 10.0, cuDNN 7.6.5, TensorRT 6, XLA Support: https://www.dropbox.com/sh/7ejm04i8awqb2x9/AACcc1unsbVhJ_kVsksZCelFa?dl=0
 
 Hope this helps and saves you the painful disk management babysitting and unholy 24h compile time it needs on the Xavier. Stay at home during the COVID-19 and hopefully this helps anyone out there who needs the wheels for Python 3.7 like I do  and this keeps you busy prototyping until NVIDIA announces the official wheels for Python 3.7
 
